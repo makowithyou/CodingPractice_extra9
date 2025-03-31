@@ -1,2 +1,1 @@
-$( "#Datepicker" ).datepicker();
-console.log("New datepicker");
+$( "#date" ).datepicker();
