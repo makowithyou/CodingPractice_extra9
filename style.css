@@ -1,0 +1,46 @@
+/* 共通 css */
+:root {
+    --main-bg-color: #F2F2F2 ;
+    --sub-bg-color: #3D546A;
+    --main-font-color: #333333;
+    --sub-font-color: #E85C4E;
+    --button-bg-color: #E85C4E;
+}
+* {
+    box-sizing: border-box;
+    color: var(--main-font-color);
+}
+body {
+    font-family: 
+        "Hiragino Kaku Gothic ProN",
+        sans-serif;
+    margin: unset;
+}
+h2, p, fieldset {
+    margin: unset;
+    padding: unset;
+    border: unset;
+}
+h2 {
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--main-font-color);
+}
+p {
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--main-font-color);
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 10px;
+}
+
+/* 狭い画面向けの既定の CSS レイアウト値 */
+
+
+/* 広い画面向けの CSS */
+@media (min-width: 600px) {
+}
