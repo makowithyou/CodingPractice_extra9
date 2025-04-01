@@ -15,6 +15,7 @@ body {
         "Hiragino Kaku Gothic ProN",
         sans-serif;
     margin: unset;
+    background-color: var(--main-bg-color);
 }
 h2, p, fieldset {
     margin: unset;
@@ -25,6 +26,8 @@ h2 {
     font-weight: 600;
     font-size: 28px;
     color: var(--main-font-color);
+    text-align: center;
+    margin-bottom: 30px;
 }
 p {
     font-weight: 300;
@@ -35,12 +38,73 @@ p {
     max-width: 1000px;
     margin: 0 auto;
     box-sizing: content-box;
-    padding: 0 10px;
+    padding: 60px 10px;
 }
 
+
 /* 狭い画面向けの既定の CSS レイアウト値 */
-
-
+fieldset {
+    display: grid;
+    background-color: #ffffff;
+}
+legend {
+    width: 100%;
+    font-weight: 300;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #3D546A;
+    padding: 10px;
+}
+label {
+    font-weight: 300;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #3D546A;
+    padding: 10px;
+}
+input {
+    margin: 10px;
+    height: 37px;
+    border: unset;
+    background-color: var(--main-bg-color);
+}
+div.input_group_tell {
+    display: flex;
+    align-items: center;
+}
+input#tel {
+    width: 80px;
+}
+input#date {
+    width: 200px;
+}
+div.input_group_attendance{
+    display: flex;
+    align-items: center;
+}
+input#online,
+input#offline {
+    margin: 0 5px 0 10px;
+}
+label[for="online"],
+label[for="offline"] {
+    color: var(--main-font-color);
+    background: unset;
+    padding: unset;
+}
+div.details {
+    margin: 15px 10px 30px;
+}
+input[type="submit"] {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 40px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: var(--button-bg-color);
+    color: #ffffff;
+    margin: unset;
+}
 /* 広い画面向けの CSS */
 @media (min-width: 600px) {
 }
