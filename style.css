@@ -62,6 +62,14 @@ label {
     background-color: #3D546A;
     padding: 10px;
 }
+span.required {
+    color: var(--sub-font-color);
+    background-color: #ffffff;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 0 8px;
+    margin-left: 10px;
+}
 input {
     margin: 10px;
     height: 37px;
