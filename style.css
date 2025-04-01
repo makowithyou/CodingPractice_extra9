@@ -84,7 +84,7 @@ div.input_group_attendance{
 }
 input#online,
 input#offline {
-    margin: 0 5px 0 10px;
+    height: unset;
 }
 label[for="online"],
 label[for="offline"] {
