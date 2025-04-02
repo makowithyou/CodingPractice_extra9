@@ -40,12 +40,10 @@ p {
     box-sizing: content-box;
     padding: 60px 10px;
 }
-
-
-/* 狭い画面向けの既定の CSS レイアウト値 */
 fieldset {
     display: grid;
     background-color: #ffffff;
+    margin-bottom: 10px;
 }
 legend {
     width: 100%;
@@ -102,6 +100,9 @@ label[for="offline"] {
 }
 div.details {
     margin: 15px 10px 30px;
+}
+div.details address {
+    display: none;
 }
 input[type="submit"] {
     font-weight: 600;
