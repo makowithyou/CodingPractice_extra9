@@ -22,7 +22,9 @@
         <form action="" method="get">
             <fieldset>
                 <label for="name">名前<span class="required">必須</span></label>
-                <input type="text" name="name" id="name" required>
+                <div>
+                    <input type="text" name="name" id="name" required>
+                </div>
             </fieldset>
             <fieldset>
                 <label for="tel">電話番号<span class="required">必須</span></label>
@@ -41,13 +43,15 @@
             </fieldset>
             <fieldset>
                 <legend>受講形式<span class="required">必須</span></legend>
-                <div class="input_group_attendance">
-                    <input type="radio" id="online" name="attendance" value="online" checked>
-                    <label for="online">オンラインで受講</label>
-                </div>
-                <div class="input_group_attendance">
-                    <input type="radio" id="offline" name="attendance" value="offline">
-                    <label for="offline">会場で受講</label>
+                <div>
+                    <div class="input_group_attendance">
+                        <input type="radio" id="online" name="attendance" value="online" checked>
+                        <label for="online">オンラインで受講</label>
+                    </div>
+                    <div class="input_group_attendance">
+                        <input type="radio" id="offline" name="attendance" value="offline">
+                        <label for="offline">会場で受講</label>
+                    </div>
                 </div>
             </fieldset>
             <div class="details">
