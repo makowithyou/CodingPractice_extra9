@@ -116,4 +116,14 @@ input[type="submit"] {
 }
 /* 広い画面向けの CSS */
 @media (min-width: 600px) {
+    fieldset {
+        margin-bottom: 2px;
+        grid-template-columns: 1fr 2fr;
+    }
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
 }
