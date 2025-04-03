@@ -40,6 +40,10 @@ p {
     box-sizing: content-box;
     padding: 60px 10px;
 }
+form {
+    display: flex;
+    flex-direction: column;
+}
 fieldset {
     display: grid;
     background-color: #ffffff;
@@ -113,6 +117,7 @@ input[type="submit"] {
     background-color: var(--button-bg-color);
     color: #ffffff;
     margin: unset;
+    align-self: center;
 }
 /* 広い画面向けの CSS */
 @media (min-width: 600px) {
@@ -125,5 +130,8 @@ input[type="submit"] {
         align-items: center;
         justify-content: space-between;
         padding: 15px;
+    }
+    div.details {
+        margin: 15px 30px 30px;
     }
 }
