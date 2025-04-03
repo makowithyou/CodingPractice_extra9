@@ -49,15 +49,8 @@ fieldset {
     background-color: #ffffff;
     margin-bottom: 10px;
 }
-legend {
-    width: 100%;
-    font-weight: 300;
-    font-size: 14px;
-    color: #ffffff;
-    background-color: #3D546A;
-    padding: 10px;
-}
-label {
+label,
+fieldset.attendance p {
     font-weight: 300;
     font-size: 14px;
     color: #ffffff;
@@ -78,26 +71,29 @@ input {
     border: unset;
     background-color: var(--main-bg-color);
 }
-div.input_group_tell {
+fieldset.tel div {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
-input#tel {
+fieldset.tel input {
     width: 80px;
+    margin: 10px 0;
 }
-input#date {
+fieldset.tel input:first-of-type {
+    margin-left: 10px;
+}
+fieldset.date input {
     width: 200px;
 }
-div.input_group_attendance{
+div.input_group_attendance {
     display: flex;
     align-items: center;
 }
-input#online,
-input#offline {
+fieldset.attendance input {
     height: unset;
 }
-label[for="online"],
-label[for="offline"] {
+fieldset.attendance label {
     color: var(--main-font-color);
     background: unset;
     padding: unset;
@@ -125,7 +121,8 @@ input[type="submit"] {
         margin-bottom: 2px;
         grid-template-columns: 1fr 2fr;
     }
-    label {
+    label,
+    fieldset.attendance p {
         display: flex;
         align-items: center;
         justify-content: space-between;
