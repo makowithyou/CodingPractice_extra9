@@ -49,6 +49,9 @@ fieldset {
     background-color: #ffffff;
     margin-bottom: 10px;
 }
+fieldset > div {
+    margin: 10px;
+}
 label,
 fieldset.attendance p {
     font-weight: 300;
@@ -65,8 +68,11 @@ span.required {
     padding: 0 8px;
     margin-left: 10px;
 }
+p.required {
+    color: var(--sub-font-color);
+    width: 100%;
+}
 input {
-    margin: 10px;
     height: 37px;
     border: unset;
     background-color: var(--main-bg-color);
@@ -75,13 +81,10 @@ fieldset.tel div {
     display: flex;
     align-items: center;
     gap: 5px;
+    flex-wrap: wrap;
 }
 fieldset.tel input {
     width: 80px;
-    margin: 10px 0;
-}
-fieldset.tel input:first-of-type {
-    margin-left: 10px;
 }
 fieldset.date input {
     width: 200px;
