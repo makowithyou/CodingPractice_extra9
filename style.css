@@ -101,7 +101,7 @@ fieldset.attendance label {
 div.details {
     margin: 15px 10px 30px;
 }
-div.details address {
+div.details .offline_details {
     display: none;
 }
 input[type="submit"] {
