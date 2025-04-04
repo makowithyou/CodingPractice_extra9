@@ -16,3 +16,25 @@ $("#offline").click(function(){
     $(".online_details").toggle();
     $(".offline_details").toggle();
 });
+
+$(".submit").click(function(){
+    if ($(".input_name").val() == "") {
+        $(".required.name").show();
+    } else {
+        $(".required.name").hide();
+    }
+
+    $(".input_tel").each(function(){
+        if ($(this).val() == "") {
+            $(".required.tel").show();
+        } else {
+            $(".required.tel").hide();
+        }
+    })
+
+    if ($(".input_date").val() == "") {
+        $(".required.date").show();
+    } else {
+        $(".required.date").hide();
+    }
+});
