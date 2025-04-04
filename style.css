@@ -71,6 +71,7 @@ span.required {
 p.required {
     color: var(--sub-font-color);
     width: 100%;
+    display: none;
 }
 input {
     height: 37px;
