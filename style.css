@@ -78,6 +78,9 @@ input {
     border: unset;
     background-color: var(--main-bg-color);
 }
+input#name {
+    width: 100%;
+}
 fieldset.tel div {
     display: flex;
     align-items: center;
@@ -124,6 +127,9 @@ input[type="submit"] {
     fieldset {
         margin-bottom: 2px;
         grid-template-columns: 1fr 2fr;
+    }
+    fieldset > div {
+        margin: 20px;
     }
     label,
     fieldset.attendance p {
