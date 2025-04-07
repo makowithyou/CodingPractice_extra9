@@ -17,6 +17,7 @@ $("#offline").click(function(){
     $(".offline_details").toggle();
 });
 
+// ボタンを押した際に、未入力の項目の下にエラーメッセージを表示
 $(".submit").click(function(){
     if ($(".input_name").val() == "") {
         $(".required.name").show();
