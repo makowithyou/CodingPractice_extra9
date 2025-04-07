@@ -9,12 +9,12 @@ $( "#date" ).datepicker({
 
 // ラジオボタンでテキストの切り替え
 $("#online").click(function(){
-    $(".online_details").toggle();
-    $(".offline_details").toggle();
+    $(".online_details").show();
+    $(".offline_details").hide();
 });
 $("#offline").click(function(){
-    $(".online_details").toggle();
-    $(".offline_details").toggle();
+    $(".online_details").hide();
+    $(".offline_details").show();
 });
 
 // ボタンを押した際に、未入力の項目の下にエラーメッセージを表示
